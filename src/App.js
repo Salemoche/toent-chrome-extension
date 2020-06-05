@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CustomButtonComponent from 'toent/src/components/2_molecules/button-custom/button-custom.component';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <CustomButtonComponent>hey there</CustomButtonComponent>
       </header>
     </div>
   );

@@ -8,13 +8,15 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "toent": "file:../toent"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch_manifest": "npm-watch build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +32,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "npm-watch": "^0.6.0",
+    "react-app-rewired": "^2.1.6"
+  },
+  "watch": {
+    "run_manifest": "public/manifest.json"
   }
 }
