@@ -1,9 +1,0 @@
-{
-  "name": "Toent Chrome Extension",
-  "version": "0.1",
-  "manifest_version": 2,
-  "browser_action": {
-      "default_popup": "index.html"
-  },
-  "content_security_policy": "script-src 'self' 'sha256-dnsyh0q5rzY6HIhyV1KA3Fv5NKU2fNuCz+4XQy6KceY='; object-src 'self'"
-}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Toent Chrome Extension",
+  "description": "Extension for the Toent app",
+  "version": "0.0.0.1",
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Toent",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ]
+}
